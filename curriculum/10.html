@@ -4,116 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syllabus - Aston High School</title>
+    <title>10</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            background-color: #f7f9fc;
-            margin: 0;
-            padding: 40px 20px;
-            font-family: "Times New Roman", Times, serif;
-            display: flex;
-            justify-content: center;
+        :root { --primary: #8B0000; --text: #333; --bg: #f7f9fc; }
+        body { background-color: var(--bg); margin: 0; padding: 2rem 1rem; font-family: "Times New Roman", Times, serif; color: var(--text); }
+        .document { 
+            background: white; 
+            width: 95%; 
+            max-width: 1000px; 
+            margin: 0 auto; 
+            padding: 3rem; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            border-radius: 8px; 
+            box-sizing: border-box; 
         }
-        .document {
-            background: white;
-            width: 210mm;
-            min-height: 297mm;
-            padding: 15mm 20mm;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            box-sizing: border-box;
-            position: relative;
+        .header { text-align: center; margin-bottom: 2rem; border-bottom: 2px solid #eee; padding-bottom: 1.5rem; position: relative; }
+        .header-logo { width: 80px; height: auto; margin-bottom: 1rem; }
+        .line1 { font-size: 28pt; font-weight: bold; margin: 0; color: black; }
+        .line2 { font-size: 24pt; font-weight: bold; margin: 5px 0; }
+        .line3 { font-size: 20pt; font-weight: bold; margin: 0; }
+        .address { font-size: 11pt; margin: 10px 0; color: #555; }
+        .description { font-size: 10pt; font-style: italic; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+        .syllabus-title { font-size: 18pt; font-weight: bold; text-align: center; margin: 2rem 0; text-decoration: underline; color: var(--primary); }
+        .content { font-size: 14pt; line-height: 1.6; white-space: pre-wrap; margin-bottom: 2rem; }
+        .subject-head { font-size: 16pt; font-weight: bold; margin-top: 1.5rem; margin-bottom: 0.5rem; display: block; text-decoration: underline; color: black; }
+        
+        .download-btn:hover { background: #a00000; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(139,0,0,0.3); }
+        @media (max-width: 768px) {
+            .document { padding: 1.5rem; width: 100%; border-radius: 0; }
+            .line1 { font-size: 20pt; }
+            .line2 { font-size: 18pt; }
+            .line3 { font-size: 16pt; }
+            .content { font-size: 12pt; }
+            .subject-head { font-size: 14pt; }
         }
-        .header {
-            text-align: center;
-            position: relative;
-            margin-bottom: 10pt;
-        }
-        .header-logo {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 90px;
-            height: auto;
-        }
-        .line1 {
-            font-size: 28pt;
-            font-weight: bold;
-            margin: 0;
-            color: black;
-        }
-        .line2 {
-            font-size: 24pt;
-            font-weight: bold;
-            margin: 0;
-            line-height: 1;
-        }
-        .line3 {
-            font-size: 22pt;
-            font-weight: bold;
-            margin: 0;
-        }
-        .dots {
-            font-size: 11pt;
-            margin: 2pt 0;
-            letter-spacing: 1px;
-            color: black;
-        }
-        .address {
-            font-size: 11pt;
-            margin: 2pt 0;
-            color: black;
-        }
-        .description {
-            font-size: 10pt;
-            font-style: italic;
-            margin-top: 5pt;
-            color: black;
-            text-transform: uppercase;
-        }
-        .syllabus-title {
-            font-size: 14pt;
-            font-weight: bold;
-            text-align: center;
-            margin: 30pt 0 15pt;
-            text-decoration: underline;
-            text-transform: uppercase;
-        }
-        .content {
-            font-size: 12pt;
-            line-height: 1.4;
-            white-space: pre-wrap;
-            color: black;
-        }
-        .subject-head {
-            font-size: 12pt;
-            font-weight: bold;
-            margin-top: 15pt;
-            margin-bottom: 5pt;
-            display: block;
-            text-decoration: underline;
-        }
-        @media print {
-            body { background: white; padding: 0; }
-            .document { box-shadow: none; border: none; }
-        }
+        @media print { body { background: white; padding: 0; } .document { box-shadow: none; border: none; width: 100%; max-width: none; }  }
     </style>
 </head>
 <body>
     <div class="document">
+        
         <div class="header">
             <img src="../assets/images/school_logo_header.jpeg" class="header-logo" alt="Logo">
             <div class="line1">ASTON HOSTEL</div>
             <div class="line2">&</div>
             <div class="line3">NACHIKETAS HIGH SCHOOL</div>
             <div class="line3">AND JR. COLLEGE</div>
-            <div class="dots">...................................................................................................................................</div>
             <div class="address">Aston Hostel, Godawali Road, Panchgani, Tal. – Mahabaleshwar, Dist.- Satara – 412805</div>
-            <div class="dots">...................................................................................................................................</div>
             <div class="description">(RESIDENTIAL CO-ED HOSTEL FOR ENGLISH MEDIUM STUDENTS OF SSC, HSC, CBSE Board)</div>
         </div>
-
         <div class="syllabus-title">SYLLABUS FOR CLASS 10 ENTRANCE TEST</div>
-        
         <div class="content">Academic content is currently being updated for this level. Please contact the school office for the detailed entrance test syllabus.</div>
     </div>
 </body>
